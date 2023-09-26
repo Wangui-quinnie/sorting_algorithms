@@ -73,5 +73,8 @@ void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 void sort_deck(deck_node_t **deck);
-
+void recursive_quick_sort(int *array, int low, int high, size_t size);
+int lomuto_partition(int *array, int low, int high, size_t size);
+void recursive_merge_sort(int *array, int *temp, int left, int right);
+void merge(int *array, int *temp, int left, int mid, int right);
 #endif
